@@ -12,6 +12,6 @@ with open('cook_b.txt', encoding='utf-8') as f:
 print(f'cook_book = {cook_book}')
 
 
-# def get_shop_list_by_dishes(dishes, person_count):
-#     shop_list = {}
-#     for dish in dishes:
+def get_shop_list_by_dishes(dishes, person_count):
+    shop_list = {}
+    for dish in dishes:
