@@ -1,4 +1,4 @@
-with open('cook.txt', encoding='utf-8') as f:
+with open('cook_b.txt', encoding='utf-8') as f:
     cook_book = {}
     for line in f:
         dish_name = line.strip()
@@ -12,7 +12,6 @@ with open('cook.txt', encoding='utf-8') as f:
 print(f'cook_book = {cook_book}')
 
 
-def get_shop_list_by_dishes(dishes, person_count):
-    shop_list = {}
-    for dish in dishes:
-        if dish in cook_book:
+# def get_shop_list_by_dishes(dishes, person_count):
+#     shop_list = {}
+#     for dish in dishes:
