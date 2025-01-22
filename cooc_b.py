@@ -6,10 +6,10 @@ with open('cook_b.txt', encoding='utf-8') as f:
         quantity_ingredient = int(f.readline())
         for j in range(quantity_ingredient):
             ingredient_name, quantity, measure = f.readline().split(' | ')
-            ingredients.append({'ingredient_name': ingredient_name, 'quantity': quantity, 'measure': measure})
+            ingredients.append({'ingredient_name': ingredient_name, 'quantity': int(quantity), 'measure': measure})
         f.readline()
         cook_book[dish_name] = ingredients
-# print(f'cook_book = {cook_book}')
+print(f'cook_book = {cook_book}')
 
 
 
